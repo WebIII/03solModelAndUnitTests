@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace BlackJackGame.Models
+﻿namespace BlackJackGame.Models
 {
     public class Card
     {
@@ -13,7 +11,8 @@ namespace BlackJackGame.Models
         #region Constructors
         public Card(Suit suit, FaceValue faceValue)
         {
-            throw new NotImplementedException();
+            Suit = suit;
+            FaceValue = faceValue;
         }
         #endregion
 
