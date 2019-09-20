@@ -16,4 +16,8 @@
     <ProjectReference Include="..\BlackJackGame\BlackJackGame.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
 </Project>
