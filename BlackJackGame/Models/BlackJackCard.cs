@@ -4,13 +4,12 @@ namespace BlackJackGame.Models
 {
     public class BlackJackCard : Card
     {
-
         #region Properties
         public bool FaceUp { get; private set; }
 
         public int Value
         {
-            get { throw new NotImplementedException(); }
+            get { return FaceUp ? Math.Min(10, (int)FaceValue) : 0; }
         }
         #endregion
 
@@ -18,16 +17,15 @@ namespace BlackJackGame.Models
         public BlackJackCard(Suit suit, FaceValue faceValue)
             : base(suit, faceValue)
         {
-            throw new NotImplementedException();
+            FaceUp = false;
         }
         #endregion
 
         #region Methods
         public void TurnCard()
         {
-            throw new NotImplementedException();
+            FaceUp = !FaceUp;
         }
         #endregion
-
     }
 }
